@@ -1,8 +1,9 @@
-global.ex += 100 / room_speed;
-
-//	 LEVEL UP
-if (global.ex >= global.exMax) {
-	global.level += 1;
-	global.ex = 0;
-	global.exMax += 30;
+//	FULLSCREEN
+if (keyboard_check_pressed(vk_escape)) {
+	if (window_get_fullscreen()) {
+		window_set_fullscreen(0);
+	}
+	else {
+		window_set_fullscreen(1);
+	}
 }

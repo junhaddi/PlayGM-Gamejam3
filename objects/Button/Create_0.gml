@@ -1,0 +1,1 @@
+image_scale = 1;
